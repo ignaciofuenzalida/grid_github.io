@@ -1,0 +1,100 @@
+body{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+display: grid;
+grid-template-rows: 10vh 80vh 10vh;
+grid-template-columns: 15vw  85vw;
+grid-template-areas:
+"header header"
+" sidebar main"
+"footer footer";
+}
+
+ .header{
+grid-area: header;
+display: flex;
+justify-content:center;
+gap: 20px;
+padding:5px;
+font-size:larger;
+background-image: url(../img/logo_3.jpeg);
+
+}
+
+
+ .sidebar{
+grid-area:sidebar;
+background-color: orange ;
+background-image: url(../img/fondo_5.jpg);
+color: white;
+
+
+ }
+
+
+ .main{
+    grid-area: main;
+    background-color: rgb(219, 219, 205);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-image: url(../img/fondo_5.jpg);
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+ }
+
+
+ .footer{
+grid-area: footer;
+background-color:black;
+color:white;
+display: flex;
+justify-content: center;
+padding: 30px;
+ }
+
+.card{
+    margin: 10px;
+    height: 35vh;
+    width: 250px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+.card h5{ 
+font-size: 1.3rem;
+}
+
+.contenedorimg{
+width: 100%;
+height: 50%;
+overflow: hidden;
+ }
+
+.contenedorimg img{
+width: 100%;
+height: 100%;
+object-fit: scale-down;
+}
+
+
+h5,p{
+margin: 0;
+}
+
+.card button {
+width: 100%;
+padding: 10%;
+background-color: rgb(113, 113, 236);
+color: black;
+border: none;
+cursor: pointer;
+}
+
+.card button:hover{
+background-color: rgb(147, 147, 201);
+}
