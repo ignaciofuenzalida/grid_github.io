@@ -15,8 +15,9 @@ grid-template-areas:
 grid-area: header;
 display: flex;
 justify-content:center;
+align-items: center;
 gap: 20px;
-padding:5px;
+padding:0px;
 font-size:larger;
 background-image: url(../img/logo_3.jpeg);
 
